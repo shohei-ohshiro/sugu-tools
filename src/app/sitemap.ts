@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { TOOLS } from "@/lib/tools";
 
-const BASE = "https://sugu-tools.vercel.app";
+const BASE = "https://sugu-tools-pi.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

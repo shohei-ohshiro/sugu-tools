@@ -6,7 +6,7 @@ const DESC =
   "文字数カウント・西暦和暦変換・パーセント計算など、開いた瞬間つかえる無料Webツール集。登録不要、データはブラウザ内で処理されます。";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sugu-tools.vercel.app"),
+  metadataBase: new URL("https://sugu-tools-pi.vercel.app"),
   title: { default: TITLE, template: "%s | すぐツール" },
   description: DESC,
   applicationName: TITLE,
