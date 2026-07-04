@@ -26,8 +26,11 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="mt-12 border-t border-slate-100 pt-4 text-center text-xs text-slate-400">
-        すぐツール — ツールは少しずつ増えていきます。
+      <footer className="mt-12 space-y-1 border-t border-slate-100 pt-4 text-center text-xs text-slate-400">
+        <p>すぐツール — ツールは少しずつ増えていきます。</p>
+        <p>
+          <Link href="/privacy" className="hover:text-blue-600">プライバシーポリシー</Link>
+        </p>
       </footer>
     </div>
   );

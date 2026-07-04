@@ -51,8 +51,11 @@ export default function ToolPage({
         </section>
       </main>
 
-      <footer className="mt-10 border-t border-slate-100 pt-4 text-center text-xs text-slate-400">
-        すぐツール — 開いた瞬間つかえる無料ツール集。登録不要・データはブラウザ内で処理されサーバーに送信されません。
+      <footer className="mt-10 space-y-1 border-t border-slate-100 pt-4 text-center text-xs text-slate-400">
+        <p>すぐツール — 開いた瞬間つかえる無料ツール集。登録不要・データはブラウザ内で処理されサーバーに送信されません。</p>
+        <p>
+          <Link href="/privacy" className="hover:text-blue-600">プライバシーポリシー</Link>
+        </p>
       </footer>
     </div>
   );
