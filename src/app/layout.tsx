@@ -1,11 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-const TITLE = "sugu-tools";
-const DESC = "sugu-tools - shohei_try で scaffold した Next.js アプリ";
+const TITLE = "すぐツール — 開いた瞬間つかえる無料ツール集";
+const DESC =
+  "文字数カウント・西暦和暦変換・パーセント計算など、開いた瞬間つかえる無料Webツール集。登録不要、データはブラウザ内で処理されます。";
 
 export const metadata: Metadata = {
-  title: TITLE,
+  metadataBase: new URL("https://sugu-tools.vercel.app"),
+  title: { default: TITLE, template: "%s | すぐツール" },
   description: DESC,
   applicationName: TITLE,
   openGraph: {
@@ -33,7 +35,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ja">
-      <body className="antialiased">{children}</body>
+      <body className="bg-slate-50 antialiased">{children}</body>
     </html>
   );
 }
